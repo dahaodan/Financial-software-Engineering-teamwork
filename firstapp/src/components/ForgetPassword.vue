@@ -13,7 +13,11 @@
     <div class="forgetPassword">
       <div class="forgetPassword_form">
         <p>Welcome!</p>
-        <el-form :model="forgetPasswordForm" :rules="rules" ref="forgetPasswordForm">
+        <el-form
+          :model="forgetPasswordForm"
+          :rules="rules"
+          ref="forgetPasswordForm"
+        >
           <el-form-item label="" prop="userName">
             <el-input
               type="text"
@@ -32,6 +36,24 @@
               placeholder="请输入注册邮箱"
             ></el-input>
           </el-form-item>
+          <el-form-item label="" prop="passWord">
+            <el-input
+              type="password"
+              autocomplete="off"
+              v-model="forgetPasswordForm.lock"
+              prefix-icon="el-icon-lock"
+              placeholder="请输入新密码"
+            ></el-input>
+          </el-form-item>
+          <el-form-item label="" prop="checkPass">
+            <el-input
+              type="password"
+              autocomplete="off"
+              v-model="forgetPasswordForm.lock"
+              prefix-icon="el-icon-lock"
+              placeholder="请再次输入新密码"
+            ></el-input>
+          </el-form-item>
           <el-form-item class="btns1">
             <el-button type="primary" @click="submitForm('forgetPasswordForm')"
               >验证</el-button
@@ -45,7 +67,10 @@
             <router-link style="text-decoration: none" to="/login">
               <el-link :underline="false" type="primary">登录</el-link>
             </router-link>
-            <router-link style="text-decoration: none" to="/register">
+            <router-link
+              style="text-decoration: none"
+              to="/register"
+            >
               <el-link :underline="false" type="primary">注册</el-link>
             </router-link>
           </el-form-item>
@@ -64,12 +89,34 @@ export default {
         callback(new Error("请输入注册邮箱"));
       } else {
         if (value !== "") {
-          var reg =
+          var forgetPassword =
             /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
-          if (!reg.test(value)) {
+          if (!forgetPassword.test(value)) {
             callback(new Error("请输入有效的邮箱"));
           }
         }
+        callback();
+      }
+    };
+    var validatePass = (rule, value, callback) => {
+      if (value === "") {
+        callback(new Error("请输入密码"));
+      } else {
+        if (this.forgetPasswordForm.checkPass !== "") {
+          if (value.length < 6 || value.length > 16) {
+            callback(new Error("密码长度在6到16个字符"));
+          }
+          this.$refs.forgetPasswordForm.validateField("checkPass");
+        }
+        callback();
+      }
+    };
+    var validatePass2 = (rule, value, callback) => {
+      if (value === "") {
+        callback(new Error("请再次输入密码"));
+      } else if (value !== this.forgetPasswordForm.passWord) {
+        callback(new Error("两次输入密码不一致!"));
+      } else {
         callback();
       }
     };
@@ -96,6 +143,12 @@ export default {
         userEmail: [
           { required: true, validator: validateEmail, trigger: "blur" },
         ],
+        passWord: [
+          { required: true, validator: validatePass, trigger: "blur" },
+        ],
+        checkPass: [
+          { required: true, validator: validatePass2, trigger: "blur" },
+        ],
       },
     };
   },
@@ -114,7 +167,6 @@ export default {
     // 提交登录信息
     submitForm(formName) {
       this.$refs["forgetPasswordForm"].validate((valid) => {
-        // 验证用户名和密码输入是否符合规范
         if (valid) {
           let config = {
             // 关于comnteng-type，看https://www.jb51.net/article/145209.htm
@@ -128,6 +180,7 @@ export default {
           let data = {
             username: this.forgetPasswordForm.userName,
             email: this.forgetPasswordForm.userEmail,
+            password: this.forgetPasswordForm.passWord,
           };
 
           // axios方式发送请求
@@ -135,21 +188,21 @@ export default {
             .post("/forgetPassword", data, config)
             .then((response) => {
               console.log(response.data);
-              // 用户信息验证成功 code返回值为0
-              // 用户信息验证失败 code返回值为1
+              // 用户验证成功并且密码修改成功 code返回值为0
+              // 用户验证失败 code返回值为1
               if (response.data["code"] === 0) {
-                this.$message.success("用户信息验证成功");
+                this.$message.success("密码修改成功");
                 this.$router.push("/");
               } else {
-                this.$message.error("用户信息验证失败");
+                this.$message.error("用户验证失败");
               }
             })
             .catch(function (error) {
               console.log(error);
-              this.$message.error("用户信息验证失败");
+              this.$message.error("用户验证失败");
             });
         } else {
-          this.$message.error("用户信息验证失败");
+          this.$message.error("用户验证失败");
           return false;
         }
       });
@@ -217,10 +270,10 @@ export default {
 }
 .forgetPassword_form {
   width: 400px;
-  height: 360px;
+  height: 500px;
   position: absolute;
   left: 50%;
-  top: 45%;
+  top: 40%;
   margin-left: -200px;
   margin-top: -150px;
   padding: 10px;

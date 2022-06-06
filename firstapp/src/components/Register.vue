@@ -1,4 +1,3 @@
-// 注册界面
 <template>
   <div class="body">
     <div class="stars" ref="starsRef">
@@ -29,7 +28,7 @@
               autocomplete="off"
               v-model="regForm.passWord"
               prefix-icon="el-icon-lock"
-              placeholder="请设置密码"
+              placeholder="请输入新密码"
             ></el-input>
           </el-form-item>
           <el-form-item label="" prop="checkPass">
@@ -38,7 +37,7 @@
               autocomplete="off"
               v-model="regForm.checkPass"
               prefix-icon="el-icon-lock"
-              placeholder="请再次输入密码"
+              placeholder="请再次输入新密码"
             ></el-input>
           </el-form-item>
           <el-form-item label="" prop="userEmail">
@@ -60,7 +59,11 @@
             <router-link style="text-decoration: none" to="/">
               <el-link :underline="false" type="primary">返回首页</el-link>
             </router-link>
-            <router-link :underline="false" style="text-decoration: none" to="/login">
+            <router-link
+              :underline="false"
+              style="text-decoration: none"
+              to="/login"
+            >
               <el-link :underline="false" type="primary">登录</el-link>
             </router-link>
           </el-form-item>
@@ -159,11 +162,8 @@ export default {
       this.$refs["regForm"].validate((valid) => {
         if (valid) {
           let config = {
-            // 关于comnteng-type，看https://www.jb51.net/article/145209.htm
             headers: {
-              "Content-Type": "application/json", //默认
-              // 'Content-Type': 'multipart/form-data'
-              // 'Content-Type': 'application/x-www-form-urlencoded'
+              "Content-Type": "application/json",
             },
           };
 
@@ -173,21 +173,20 @@ export default {
             email: this.regForm.userEmail,
           };
 
-          // axios方式发送请求
           this.$axios
             .post("/register", data, config)
             .then((response) => {
               console.log(response.data);
-              // 注册成功 code返回值为0
-              // 用户名已被使用 code返回值为1
-              // 注册邮箱已被使用 code返回值为2
-              if (response.data["code"] == 0) {
+              // 注册成功 auth返回值为0
+              // 用户名已被使用 auth返回值为1
+              // 注册邮箱已被使用 auth返回值为2
+              if (response.data["auth"] == 0) {
                 this.$message.success("注册成功 正在前往登录界面");
                 // 可以考虑加入适当的延迟
                 this.$router.push("/login");
-              } else if (response.data["code"] == 1) {
+              } else if (response.data["auth"] == 1) {
                 this.$message.error("注册失败 用户名已被使用");
-              } else if (response.data["code"] == 2) {
+              } else if (response.data["auth"] == 2) {
                 this.$message.error("注册失败 注册邮箱已被使用");
               } else {
                 // this line should not be run
@@ -288,6 +287,7 @@ export default {
 }
 .btns1 {
   align-items: center;
+  text-align: center;
   justify-content: flex-end;
 }
 .btns2 {

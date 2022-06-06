@@ -13,7 +13,12 @@
     <div class="login">
       <div class="login_form">
         <p>Welcome!</p>
-        <el-form :model="loginForm" :rules="rules" ref="loginForm">
+        <el-form
+          :model="loginForm"
+          :rules="rules"
+          ref="loginForm"
+          @keyup.enter.native="submitForm()"
+        >
           <el-form-item label="" prop="userName">
             <el-input
               type="text"
@@ -33,9 +38,7 @@
             ></el-input>
           </el-form-item>
           <el-form-item class="btns1">
-            <el-button type="primary" @click="submitForm('loginForm')"
-              >登录</el-button
-            >
+            <el-button type="primary" @click="submitForm()">登录</el-button>
             <el-button @click="resetLoginForm">重置</el-button>
           </el-form-item>
           <el-form-item class="btns2">
@@ -56,6 +59,8 @@
 </template>
 
 <script>
+import Cookies from "js-cookie";
+import { Message } from "element-ui";
 export default {
   name: "Login",
   data() {
@@ -104,16 +109,13 @@ export default {
   },
   methods: {
     // 提交登录信息
-    submitForm(formName) {
+    submitForm() {
       this.$refs["loginForm"].validate((valid) => {
         // 验证用户名和密码输入是否符合规范
         if (valid) {
           let config = {
-            // 关于comnteng-type，看https://www.jb51.net/article/145209.htm
             headers: {
-              "Content-Type": "application/json", //默认
-              // 'Content-Type': 'multipart/form-data'
-              // 'Content-Type': 'application/x-www-form-urlencoded'
+              "Content-Type": "application/json",
             },
           };
 
@@ -122,35 +124,31 @@ export default {
             password: this.loginForm.passWord,
           };
 
-          // axios方式发送请求
           this.$axios
             .post("/login", data, config)
             .then((response) => {
               console.log(response.data);
-              // 管理员登录成功 code返回值为-1
-              // 普通用户登录成功 code返回值为0
-              // 登录失败 code返回值为1
-              if (response.data["code"] === 0) {
+              // 登录成功 auth返回值为0
+              // 登录失败 auth返回值为1
+              if (response.data["auth"] === 0) {
                 // 普通用户模式
-                this.$message.success("登录成功");
-                this.$router.push("/");
+                localStorage.setItem("token", response.data);
+                Cookies.set("username", response.data['username']);
+                Cookies.set("email", response.data['email']);
+                Cookies.set("money", response.data['money']);
+                Cookies.set("profile", response.data['profile']);
+                Message.success("登录成功");
+                this.$router.push("/dashboard");
               } else {
-                if (response.data["code"] === -1) {
-                  // 管理员模式
-                  this.$message.success("登录成功");
-                  this.$router.push("/");
-                }
-                else {
-                  this.$message.error("登录失败");
-                }
+                Message.error("登录失败");
               }
             })
-            .catch(function (error) {
+            .catch((error) => {
               console.log(error);
-              this.$message.error("登录失败");
+              Message.error("登录失败");
             });
         } else {
-          this.$message.error("登录失败");
+          Message.error("登录失败");
           return false;
         }
       });
@@ -231,6 +229,7 @@ export default {
 }
 .btns1 {
   align-items: center;
+  text-align: center;
   justify-content: flex-end;
 }
 .btns2 {
