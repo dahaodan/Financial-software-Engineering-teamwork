@@ -1,0 +1,118 @@
+Date : 2022-06-07 11:35:58
+Directory : /Users/zhangyiyao/Desktop/pythonhandler
+Total : 82 files,  61610 codes, 48 comments, 337 blanks, all 61995 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Excel    |         64 |     53,185 |          0 |        255 |     53,440 |
+| CSV      |          1 |      7,642 |          0 |          1 |      7,643 |
+| Python   |         17 |        783 |         48 |         81 |        912 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                            | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                               |         82 |     61,610 |         48 |        337 |     61,995 |
+| handler                                                                         |         17 |      8,381 |         48 |         76 |      8,505 |
+| handler/predict                                                                 |          4 |      7,760 |         12 |         26 |      7,798 |
+| handler/predict/data                                                            |          1 |      7,642 |          0 |          1 |      7,643 |
+| model                                                                           |         64 |     53,185 |          0 |        255 |     53,440 |
+| model/GATs                                                                      |         10 |      9,156 |          0 |         57 |      9,213 |
+| model/GRU                                                                       |         10 |      8,688 |          0 |         33 |      8,721 |
+| model/LGBM                                                                      |         14 |      9,577 |          0 |         56 |      9,633 |
+| model/Linear                                                                    |         10 |      8,698 |          0 |         35 |      8,733 |
+| model/MLP                                                                       |         10 |      8,697 |          0 |         42 |      8,739 |
+| model/TabNet                                                                    |         10 |      8,369 |          0 |         32 |      8,401 |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                        | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/base.py                         | Python   |         20 |          7 |          6 |         33 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/conn.py                         | Python   |          9 |          0 |          2 |         11 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/dashboard.py                    | Python   |         25 |          0 |          2 |         27 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/getstock.py                     | Python   |         18 |          2 |          3 |         23 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/login.py                        | Python   |         29 |         10 |          8 |         47 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/predict/data/000001.csv         | CSV      |      7,642 |          0 |          1 |      7,643 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/predict/gru_predict.py          | Python   |         12 |          3 |          4 |         19 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/predict/lstm_predict.py         | Python   |         12 |          3 |          5 |         20 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/predict/predict.py              | Python   |         94 |          6 |         16 |        116 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/register.py                     | Python   |         39 |         11 |          8 |         58 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/research.py                     | Python   |         16 |          0 |          3 |         19 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/simulation.py                   | Python   |         39 |          0 |          3 |         42 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/stocknews.py                    | Python   |        152 |          6 |          6 |        164 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/tempCodeRunnerFile.py           | Python   |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/test.py                         | Python   |          0 |          0 |          1 |          1 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/transaction.py                  | Python   |        153 |          0 |          4 |        157 |
+| /Users/zhangyiyao/Desktop/pythonhandler/handler/userinfo.py                     | Python   |        120 |          0 |          4 |        124 |
+| /Users/zhangyiyao/Desktop/pythonhandler/main.py                                 | Python   |         44 |          0 |          6 |         50 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GATs/LS_LA.xlsx                   | Excel    |        272 |          0 |          1 |        273 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GATs/all_risk_analysis.xlsx       | Excel    |         49 |          0 |          0 |         49 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GATs/group_return.xlsx            | Excel    |        747 |          0 |          8 |        755 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GATs/ic_df.xlsx                   | Excel    |        150 |          0 |          0 |        150 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GATs/monthly_ic.xlsx              | Excel    |         59 |          0 |          1 |         60 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GATs/monthly_risk_analysis.xlsx   | Excel    |        160 |          0 |          0 |        160 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GATs/port_info.xlsx               | Excel    |      6,335 |          0 |         34 |      6,369 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GATs/pred_autocorr.xlsx           | Excel    |        159 |          0 |          1 |        160 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GATs/report_info.xlsx             | Excel    |        862 |          0 |          9 |        871 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GATs/scoreic_info.xlsx            | Excel    |        363 |          0 |          3 |        366 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GRU/LS_LA.xlsx                    | Excel    |        327 |          0 |          2 |        329 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GRU/all_risk_analysis.xlsx        | Excel    |         47 |          0 |          0 |         47 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GRU/group_return.xlsx             | Excel    |        844 |          0 |          5 |        849 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GRU/ic_df.xlsx                    | Excel    |        145 |          0 |          0 |        145 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GRU/monthly_ic.xlsx               | Excel    |         50 |          0 |          0 |         50 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GRU/monthly_risk_analysis.xlsx    | Excel    |        141 |          0 |          2 |        143 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GRU/port_info.xlsx                | Excel    |      5,788 |          0 |         20 |      5,808 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GRU/pred_autocorr.xlsx            | Excel    |        133 |          0 |          0 |        133 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GRU/report_info.xlsx              | Excel    |        835 |          0 |          3 |        838 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/GRU/scoreic_info.xlsx             | Excel    |        378 |          0 |          1 |        379 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/.~all_risk_analysis.xlsx     | Excel    |          2 |          0 |          1 |          3 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/.~port_info.xlsx             | Excel    |          2 |          0 |          1 |          3 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/.~report_info.xlsx           | Excel    |          2 |          0 |          1 |          3 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/.~scoreic_info.xlsx          | Excel    |          2 |          0 |          1 |          3 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/LS_LA.xlsx                   | Excel    |        261 |          0 |          0 |        261 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/all_risk_analysis.xlsx       | Excel    |         78 |          0 |          0 |         78 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/group_return.xlsx            | Excel    |        920 |          0 |         13 |        933 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/ic_df.xlsx                   | Excel    |        157 |          0 |          0 |        157 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/monthly_ic.xlsx              | Excel    |         79 |          0 |          0 |         79 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/monthly_risk_analysis.xlsx   | Excel    |        200 |          0 |          1 |        201 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/port_info.xlsx               | Excel    |      6,353 |          0 |         30 |      6,383 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/pred_autocorr.xlsx           | Excel    |        260 |          0 |          0 |        260 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/report_info.xlsx             | Excel    |        970 |          0 |          8 |        978 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/LGBM/scoreic_info.xlsx            | Excel    |        291 |          0 |          0 |        291 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/Linear/LS_LA.xlsx                 | Excel    |        308 |          0 |          2 |        310 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/Linear/all_risk_analysis.xlsx     | Excel    |         44 |          0 |          0 |         44 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/Linear/group_return.xlsx          | Excel    |        845 |          0 |          9 |        854 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/Linear/ic_df.xlsx                 | Excel    |        149 |          0 |          0 |        149 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/Linear/monthly_ic.xlsx            | Excel    |         55 |          0 |          0 |         55 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/Linear/monthly_risk_analysis.xlsx | Excel    |        164 |          0 |          0 |        164 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/Linear/port_info.xlsx             | Excel    |      5,754 |          0 |         19 |      5,773 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/Linear/pred_autocorr.xlsx         | Excel    |        139 |          0 |          1 |        140 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/Linear/report_info.xlsx           | Excel    |        911 |          0 |          4 |        915 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/Linear/scoreic_info.xlsx          | Excel    |        329 |          0 |          0 |        329 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/MLP/LS_LA.xlsx                    | Excel    |        281 |          0 |          1 |        282 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/MLP/all_risk_analysis.xlsx        | Excel    |         46 |          0 |          0 |         46 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/MLP/group_return.xlsx             | Excel    |        781 |          0 |          6 |        787 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/MLP/ic_df.xlsx                    | Excel    |        177 |          0 |          0 |        177 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/MLP/monthly_ic.xlsx               | Excel    |         51 |          0 |          0 |         51 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/MLP/monthly_risk_analysis.xlsx    | Excel    |        129 |          0 |          0 |        129 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/MLP/port_info.xlsx                | Excel    |      5,665 |          0 |         21 |      5,686 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/MLP/pred_autocorr.xlsx            | Excel    |        186 |          0 |          1 |        187 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/MLP/report_info.xlsx              | Excel    |        990 |          0 |          9 |        999 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/MLP/scoreic_info.xlsx             | Excel    |        391 |          0 |          4 |        395 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/TabNet/LS_LA.xlsx                 | Excel    |        296 |          0 |          1 |        297 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/TabNet/all_risk_analysis.xlsx     | Excel    |         48 |          0 |          0 |         48 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/TabNet/group_return.xlsx          | Excel    |        767 |          0 |          6 |        773 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/TabNet/ic_df.xlsx                 | Excel    |        147 |          0 |          0 |        147 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/TabNet/monthly_ic.xlsx            | Excel    |         55 |          0 |          0 |         55 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/TabNet/monthly_risk_analysis.xlsx | Excel    |        145 |          0 |          1 |        146 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/TabNet/port_info.xlsx             | Excel    |      5,442 |          0 |         20 |      5,462 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/TabNet/pred_autocorr.xlsx         | Excel    |        146 |          0 |          0 |        146 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/TabNet/report_info.xlsx           | Excel    |        918 |          0 |          3 |        921 |
+| /Users/zhangyiyao/Desktop/pythonhandler/model/TabNet/scoreic_info.xlsx          | Excel    |        405 |          0 |          1 |        406 |
+| Total                                                                           |          |     61,610 |         48 |        337 |     61,995 |
++---------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

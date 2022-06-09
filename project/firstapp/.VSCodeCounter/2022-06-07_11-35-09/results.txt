@@ -1,0 +1,183 @@
+Date : 2022-06-07 11:35:09
+Directory : /Users/zhangyiyao/Desktop/firstapp
+Total : 124 files,  43923 codes, 539 comments, 472 blanks, all 44934 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          2 |     37,181 |          0 |          2 |     37,183 |
+| Vue.js     |         37 |      5,499 |        197 |        242 |      5,938 |
+| JavaScript |         30 |        970 |        176 |        150 |      1,296 |
+| SCSS       |          6 |        191 |        164 |         66 |        421 |
+| XML        |         46 |         46 |          0 |          0 |         46 |
+| Markdown   |          1 |         20 |          0 |         11 |         31 |
+| HTML       |          1 |         11 |          1 |          1 |         13 |
+| CSS        |          1 |          5 |          1 |          0 |          6 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                   | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                      |        124 |     43,923 |        539 |        472 |     44,934 |
+| build                                                                                  |          7 |        477 |         49 |         54 |        580 |
+| config                                                                                 |          4 |         45 |         25 |         19 |         89 |
+| src                                                                                    |        100 |      6,013 |        435 |        355 |      6,803 |
+| src/assets                                                                             |         48 |         57 |          2 |          3 |         62 |
+| src/assets/css                                                                         |          1 |          5 |          1 |          0 |          6 |
+| src/assets/icons                                                                       |         47 |         52 |          1 |          3 |         56 |
+| src/assets/icons/svg                                                                   |         46 |         46 |          0 |          0 |         46 |
+| src/charts                                                                             |          9 |      2,166 |        127 |         33 |      2,326 |
+| src/components                                                                         |         22 |      3,076 |         65 |        176 |      3,317 |
+| src/components/SvgIcon                                                                 |          1 |         41 |          0 |          3 |         44 |
+| src/components/dashboard                                                               |          3 |        483 |          1 |         37 |        521 |
+| src/components/simulation                                                              |          2 |        211 |          0 |         25 |        236 |
+| src/components/stocknews                                                               |          3 |        308 |          5 |         20 |        333 |
+| src/components/transaction                                                             |          3 |        410 |          0 |         18 |        428 |
+| src/components/user                                                                    |          5 |        675 |         16 |         38 |        729 |
+| src/router                                                                             |          1 |        127 |         20 |         13 |        160 |
+| src/styles                                                                             |          6 |        191 |        164 |         66 |        421 |
+| src/utils                                                                              |          4 |         90 |         47 |         22 |        159 |
+| src/views                                                                              |          6 |        238 |          4 |         30 |        272 |
+| src/views/layout                                                                       |          6 |        238 |          4 |         30 |        272 |
+| src/views/layout/components                                                            |          5 |        197 |          4 |         26 |        227 |
+| src/views/layout/components/Sidebar                                                    |          2 |         53 |          0 |         10 |         63 |
+| test                                                                                   |          7 |        142 |         25 |         24 |        191 |
+| test/e2e                                                                               |          4 |        103 |         22 |         19 |        144 |
+| test/e2e/custom-assertions                                                             |          1 |         18 |          8 |          2 |         28 |
+| test/e2e/specs                                                                         |          1 |         12 |          5 |          3 |         20 |
+| test/unit                                                                              |          3 |         39 |          3 |          5 |         47 |
+| test/unit/specs                                                                        |          1 |         10 |          0 |          2 |         12 |
++----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                               | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/zhangyiyao/Desktop/firstapp/.postcssrc.js                                       | JavaScript |          7 |          2 |          2 |         11 |
+| /Users/zhangyiyao/Desktop/firstapp/README.md                                           | Markdown   |         20 |          0 |         11 |         31 |
+| /Users/zhangyiyao/Desktop/firstapp/build/build.js                                      | JavaScript |         35 |          0 |          7 |         42 |
+| /Users/zhangyiyao/Desktop/firstapp/build/check-versions.js                             | JavaScript |         45 |          0 |         10 |         55 |
+| /Users/zhangyiyao/Desktop/firstapp/build/utils.js                                      | JavaScript |         80 |          5 |         17 |        102 |
+| /Users/zhangyiyao/Desktop/firstapp/build/vue-loader.conf.js                            | JavaScript |         21 |          0 |          2 |         23 |
+| /Users/zhangyiyao/Desktop/firstapp/build/webpack.base.conf.js                          | JavaScript |         88 |          8 |          3 |         99 |
+| /Users/zhangyiyao/Desktop/firstapp/build/webpack.dev.conf.js                           | JavaScript |         90 |         12 |          7 |        109 |
+| /Users/zhangyiyao/Desktop/firstapp/build/webpack.prod.conf.js                          | JavaScript |        118 |         24 |          8 |        150 |
+| /Users/zhangyiyao/Desktop/firstapp/config/dev.env.js                                   | JavaScript |          6 |          0 |          2 |          8 |
+| /Users/zhangyiyao/Desktop/firstapp/config/index.js                                     | JavaScript |         29 |         25 |         14 |         68 |
+| /Users/zhangyiyao/Desktop/firstapp/config/prod.env.js                                  | JavaScript |          4 |          0 |          1 |          5 |
+| /Users/zhangyiyao/Desktop/firstapp/config/test.env.js                                  | JavaScript |          6 |          0 |          2 |          8 |
+| /Users/zhangyiyao/Desktop/firstapp/index.html                                          | HTML       |         11 |          1 |          1 |         13 |
+| /Users/zhangyiyao/Desktop/firstapp/package-lock.json                                   | JSON       |     37,093 |          0 |          1 |     37,094 |
+| /Users/zhangyiyao/Desktop/firstapp/package.json                                        | JSON       |         88 |          0 |          1 |         89 |
+| /Users/zhangyiyao/Desktop/firstapp/src/App.vue                                         | Vue.js     |         22 |          1 |          3 |         26 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/css/global.css                           | CSS        |          5 |          1 |          0 |          6 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/index.js                           | JavaScript |          6 |          1 |          3 |         10 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/404.svg                        | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/bug.svg                        | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/chart.svg                      | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/clipboard.svg                  | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/component.svg                  | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/dashboard.svg                  | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/documentation.svg              | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/drag.svg                       | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/edit.svg                       | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/education.svg                  | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/email.svg                      | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/example.svg                    | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/excel.svg                      | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/exit-fullscreen.svg            | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/eye-open.svg                   | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/eye.svg                        | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/form.svg                       | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/fullscreen.svg                 | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/guide.svg                      | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/icon.svg                       | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/international.svg              | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/language.svg                   | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/link.svg                       | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/list.svg                       | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/lock.svg                       | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/message.svg                    | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/money.svg                      | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/nested.svg                     | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/password.svg                   | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/pdf.svg                        | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/people.svg                     | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/peoples.svg                    | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/qq.svg                         | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/search.svg                     | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/shopping.svg                   | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/size.svg                       | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/skill.svg                      | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/star.svg                       | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/tab.svg                        | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/table.svg                      | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/theme.svg                      | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/tree-table.svg                 | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/tree.svg                       | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/user.svg                       | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/wechat.svg                     | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/assets/icons/svg/zip.svg                        | XML        |          1 |          0 |          0 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/charts/CumulativeReturn1.vue                    | Vue.js     |        343 |         16 |          4 |        363 |
+| /Users/zhangyiyao/Desktop/firstapp/src/charts/CumulativeReturn2.vue                    | Vue.js     |        387 |         16 |          2 |        405 |
+| /Users/zhangyiyao/Desktop/firstapp/src/charts/GroupReturn.vue                          | Vue.js     |        279 |         16 |          4 |        299 |
+| /Users/zhangyiyao/Desktop/firstapp/src/charts/KChart.vue                               | Vue.js     |        317 |          1 |          3 |        321 |
+| /Users/zhangyiyao/Desktop/firstapp/src/charts/MonthlyIC.vue                            | Vue.js     |        122 |          0 |          4 |        126 |
+| /Users/zhangyiyao/Desktop/firstapp/src/charts/PredAutocorr.vue                         | Vue.js     |        200 |         16 |          8 |        224 |
+| /Users/zhangyiyao/Desktop/firstapp/src/charts/PredictChart.vue                         | Vue.js     |        207 |         17 |          3 |        227 |
+| /Users/zhangyiyao/Desktop/firstapp/src/charts/RiskAnalysis.vue                         | Vue.js     |         98 |         29 |          2 |        129 |
+| /Users/zhangyiyao/Desktop/firstapp/src/charts/ScoreIC.vue                              | Vue.js     |        213 |         16 |          3 |        232 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/Car.vue                              | Vue.js     |         53 |         22 |          8 |         83 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/ForgetPassword.vue                   | Vue.js     |        282 |          9 |          6 |        297 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/Login.vue                            | Vue.js     |        231 |          7 |          7 |        245 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/Register.vue                         | Vue.js     |        290 |          5 |          8 |        303 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/Research.vue                         | Vue.js     |         92 |          0 |          6 |         98 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/SvgIcon/index.vue                    | Vue.js     |         41 |          0 |          3 |         44 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/dashboard/PanelGroup.vue             | Vue.js     |        225 |          1 |         24 |        250 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/dashboard/ShowIndex.vue              | Vue.js     |         89 |          0 |          4 |         93 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/dashboard/index.vue                  | Vue.js     |        169 |          0 |          9 |        178 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/simulation/SimulationCard.vue        | Vue.js     |        193 |          0 |         22 |        215 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/simulation/index.vue                 | Vue.js     |         18 |          0 |          3 |         21 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/stocknews/Predict.vue                | Vue.js     |          0 |          0 |          1 |          1 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/stocknews/StockCard.vue              | Vue.js     |        273 |          5 |         13 |        291 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/stocknews/index.vue                  | Vue.js     |         35 |          0 |          6 |         41 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/transaction/RecordCard.vue           | Vue.js     |        114 |          0 |          6 |        120 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/transaction/TransCard.vue            | Vue.js     |        265 |          0 |         10 |        275 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/transaction/index.vue                | Vue.js     |         31 |          0 |          2 |         33 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/user/PanThumb.vue                    | Vue.js     |        122 |         12 |         13 |        147 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/user/PasswordCard.vue                | Vue.js     |        127 |          0 |          8 |        135 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/user/RechargeCard.vue                | Vue.js     |         93 |          0 |          8 |        101 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/user/UserCard.vue                    | Vue.js     |        293 |          0 |          0 |        293 |
+| /Users/zhangyiyao/Desktop/firstapp/src/components/user/index.vue                       | Vue.js     |         40 |          4 |          9 |         53 |
+| /Users/zhangyiyao/Desktop/firstapp/src/main.js                                         | JavaScript |         23 |          3 |          5 |         31 |
+| /Users/zhangyiyao/Desktop/firstapp/src/permission.js                                   | JavaScript |         20 |          2 |          4 |         26 |
+| /Users/zhangyiyao/Desktop/firstapp/src/router/index.js                                 | JavaScript |        127 |         20 |         13 |        160 |
+| /Users/zhangyiyao/Desktop/firstapp/src/settings.js                                     | JavaScript |          3 |          0 |          0 |          3 |
+| /Users/zhangyiyao/Desktop/firstapp/src/styles/element-ui.scss                          | SCSS       |         35 |          5 |         10 |         50 |
+| /Users/zhangyiyao/Desktop/firstapp/src/styles/index.scss                               | SCSS       |         46 |         86 |         30 |        162 |
+| /Users/zhangyiyao/Desktop/firstapp/src/styles/mixin.scss                               | SCSS       |         24 |          0 |          4 |         28 |
+| /Users/zhangyiyao/Desktop/firstapp/src/styles/sidebar.scss                             | SCSS       |         33 |         66 |          7 |        106 |
+| /Users/zhangyiyao/Desktop/firstapp/src/styles/transition.scss                          | SCSS       |         35 |          4 |         10 |         49 |
+| /Users/zhangyiyao/Desktop/firstapp/src/styles/variables.scss                           | SCSS       |         18 |          3 |          5 |         26 |
+| /Users/zhangyiyao/Desktop/firstapp/src/utils/auth.js                                   | JavaScript |         11 |          0 |          4 |         15 |
+| /Users/zhangyiyao/Desktop/firstapp/src/utils/get-page-title.js                         | JavaScript |          8 |          0 |          2 |         10 |
+| /Users/zhangyiyao/Desktop/firstapp/src/utils/request.js                                | JavaScript |         32 |          8 |          6 |         46 |
+| /Users/zhangyiyao/Desktop/firstapp/src/utils/validate.js                               | JavaScript |         39 |         39 |         10 |         88 |
+| /Users/zhangyiyao/Desktop/firstapp/src/views/layout/Layout.vue                         | Vue.js     |         41 |          0 |          4 |         45 |
+| /Users/zhangyiyao/Desktop/firstapp/src/views/layout/components/AppMain.vue             | Vue.js     |         15 |          1 |          1 |         17 |
+| /Users/zhangyiyao/Desktop/firstapp/src/views/layout/components/Navbar.vue              | Vue.js     |        126 |          3 |         15 |        144 |
+| /Users/zhangyiyao/Desktop/firstapp/src/views/layout/components/Sidebar/SidebarItem.vue | Vue.js     |         34 |          0 |          6 |         40 |
+| /Users/zhangyiyao/Desktop/firstapp/src/views/layout/components/Sidebar/index.vue       | Vue.js     |         19 |          0 |          4 |         23 |
+| /Users/zhangyiyao/Desktop/firstapp/src/views/layout/components/index.js                | JavaScript |          3 |          0 |          0 |          3 |
+| /Users/zhangyiyao/Desktop/firstapp/test/e2e/custom-assertions/elementCount.js          | JavaScript |         18 |          8 |          2 |         28 |
+| /Users/zhangyiyao/Desktop/firstapp/test/e2e/nightwatch.conf.js                         | JavaScript |         40 |          1 |          6 |         47 |
+| /Users/zhangyiyao/Desktop/firstapp/test/e2e/runner.js                                  | JavaScript |         33 |          8 |          8 |         49 |
+| /Users/zhangyiyao/Desktop/firstapp/test/e2e/specs/test.js                              | JavaScript |         12 |          5 |          3 |         20 |
+| /Users/zhangyiyao/Desktop/firstapp/test/unit/jest.conf.js                              | JavaScript |         27 |          3 |          1 |         31 |
+| /Users/zhangyiyao/Desktop/firstapp/test/unit/setup.js                                  | JavaScript |          2 |          0 |          2 |          4 |
+| /Users/zhangyiyao/Desktop/firstapp/test/unit/specs/HelloWorld.spec.js                  | JavaScript |         10 |          0 |          2 |         12 |
+| /Users/zhangyiyao/Desktop/firstapp/vue.config.js                                       | JavaScript |         27 |          2 |          4 |         33 |
+| Total                                                                                  |            |     43,923 |        539 |        472 |     44,934 |
++----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
